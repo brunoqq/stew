@@ -32,6 +32,9 @@ async def on_ready():
 @client.event
 async def on_message(message):
 ##DEFAULT_COMMANDS
+    if message.channel.id == ("459080311922491412"):
+        await client.add_reaction(message, ":yha:460550415621029889")
+        await client.add_reaction(message, ":error:460550415998517258")
     #comandos
     if message.content.lower().startswith('!comandos'):
         embed = discord.Embed(
